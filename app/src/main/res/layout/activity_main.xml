@@ -12,7 +12,9 @@
     <com.yandex.mapkit.mapview.MapView
         android:id="@+id/mapview"
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"></com.yandex.mapkit.mapview.MapView>
+        android:layout_height="match_parent">
+
+    </com.yandex.mapkit.mapview.MapView>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/main_nov"
@@ -26,7 +28,8 @@
         android:background="@drawable/color_gradient"
         app:itemIconTint="@color/color_select"
         app:itemTextColor="@color/color_select"
-        app:menu="@menu/bottom_nav"></android.support.design.widget.BottomNavigationView>
+        app:menu="@menu/bottom_nav">
+    </android.support.design.widget.BottomNavigationView>
 
     <FrameLayout
         android:id="@+id/main_frame"

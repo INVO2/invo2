@@ -1,7 +1,11 @@
 package com.example.invo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.yandex.mapkit.Animation;
 import com.yandex.mapkit.MapKitFactory;
@@ -14,7 +18,7 @@ import com.yandex.mapkit.mapview.MapView;
  * В этом примере показывается карта и камера выставляется на указанную точку.
  * Не забудьте запросить необходимые разрешения.
  */
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     /**
      * Замените "your_api_key" валидным API-ключом.
      * Ключ можно получить на сайте https://developer.tech.yandex.ru/
@@ -22,10 +26,14 @@ public class MainActivity extends Activity {
     private final String MAPKIT_API_KEY = "b76352f7-8d30-4257-ae53-b5fdb7e77bda";
     private final Point TARGET_LOCATION = new Point(59.945933, 30.320045);
 
+    FragmentTransaction fragmentTransaction;
+
+
     private MapView mapView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         /**
          * Задайте API-ключ перед инициализацией MapKitFactory.
          * Рекомендуется устанавливать ключ в методе Application.onCreate,
@@ -64,5 +72,17 @@ public class MainActivity extends Activity {
         super.onStart();
         MapKitFactory.getInstance().onStart();
         mapView.onStart();
+    }
+
+    @Override
+    public void onClick(View v) {
+        fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        switch (v.getId()){
+            case R.id.bottom_nav_search:
+                break;
+                default:
+                    break;
+
+        }
     }
 }
