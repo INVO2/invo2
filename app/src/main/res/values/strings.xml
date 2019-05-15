@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Invo</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Маршрут</string>
+    <string name="title_map">Карта</string>
+    <string name="title_settings">Настройки</string>
+    <string name="bottom_sheet_peek">Ок</string>
+    <string name="bottom_sheet_content">No</string>
+</resources>
